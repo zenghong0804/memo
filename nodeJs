@@ -1,0 +1,17 @@
+Node.js 是运行在服务端的 JavaScript.
+
+用以下命令来确认当前Node版本。
+$ node -v
+
+console.log("Hello World"); 是用来打Log的，用Chrome Fn+F12 可以看见输出。soure可以看见代码。也可以debug。
+
+Node.js 安装包及源码下载地址为：https://nodejs.org/en/download/。
+安装的时候有Add Path的选项。
+
+使用NVM 来管理不用版本的node与npm
+https://www.runoob.com/w3cnote/nvm-manager-node-versions.html
+
+Node.js 应用是由哪几部分组成的：
+引入 required 模块：我们可以使用 require 指令来载入 Node.js 模块。
+创建服务器：服务器可以监听客户端的请求，类似于 Apache 、Nginx 等 HTTP 服务器。
+接收请求与响应请求 服务器很容易创建，客户端可以使用浏览器或终端发送 HTTP 请求，服务器接收请求后返回响应数据。
