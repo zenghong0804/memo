@@ -15,3 +15,52 @@ Node.js 应用是由哪几部分组成的：
 引入 required 模块：我们可以使用 require 指令来载入 Node.js 模块。
 创建服务器：服务器可以监听客户端的请求，类似于 Apache 、Nginx 等 HTTP 服务器。
 接收请求与响应请求 服务器很容易创建，客户端可以使用浏览器或终端发送 HTTP 请求，服务器接收请求后返回响应数据。
+
+npm的一些命令
+npm -v 查看版本
+npm install npm -g 升级
+
+使用 npm 命令安装模块
+npm install <Module Name>
+例：npm install express
+
+安装好之后，express 包就放在了工程目录下的 node_modules 目录中，因此在代码中只需要通过 require('express') 的方式就好，无需指定第三方包路径。
+var express = require('express');
+
+npm install express          # 本地安装
+npm install express -g   # 全局安装
+
+我们可以使用以下命令来卸载 Node.js 模块。
+npm uninstall express
+卸载后，你可以到 /node_modules/ 目录下查看包是否还存在，或者使用以下命令查看：
+npm ls
+
+我们可以使用以下命令更新模块：
+npm update express
+使用以下来搜索模块：
+npm search express
+
+创建模块
+npm init
+
+接下来我们就用以下命令来发布模块：
+npm publish
+
+如果你遇到了使用 npm 安 装node_modules 总是提示报错：报错: npm resource busy or locked.....。
+
+可以先删除以前安装的 node_modules :
+npm cache clean 可以清空NPM本地缓存
+npm install
+
+Node.js REPL(交互式解释器)
+cmd => node 就能启动
+
+ctrl + c - 退出当前终端。
+ctrl + c 按下两次 - 退出 Node REPL。
+ctrl + d - 退出 Node REPL.
+向上/向下 键 - 查看输入的历史命令
+tab 键 - 列出当前命令
+.help - 列出使用命令
+
+
+
